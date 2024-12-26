@@ -1,0 +1,1 @@
+/*MyCopyBits.h*/pascal void MyCopyBits (char* source ,char* destination,long rowbytes,Rect* rect);	

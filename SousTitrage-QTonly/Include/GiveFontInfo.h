@@ -1,0 +1,1 @@
+#include 	"DisplayFont.h"#include 	<MixedMode.h>#ifndef __GiveDisplayFont__#define __GiveDisplayFont__CharHeaderPtr C_GiveDisplayFont_FastCharInfo(FontRenderRecordPtr theFont,short thechar,short theStyle);CharHeaderPtr C_GiveDisplayFont_CharInfo(FontRenderRecordPtr theFont,short thechar,short theStyle);#endif
