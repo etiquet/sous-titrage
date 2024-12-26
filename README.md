@@ -1,4 +1,4 @@
-# sous-titrage
+# Sous-Titrage
 
 Partage open source du code du logiciel Power-subtitling écrit pour MacOS OS9 dans les années 2001 par mes soins.
 Initié en assembleur pour la vitesse et progressivement réécrit en C/CC+ avec déjà un changement de processeur à la clé en passant de 680xx à PowerPC.
@@ -8,7 +8,10 @@ Ce logiciel était décliné en plusieurs versions :
 - pour quicktime (la librairie d'apple qui faisait le rendu des sous-titre )
 - une pour simplement faire le marquage / découpage des sous-titres avec 2 touches.
 
-- Un boitier à base de 6305 [lien](ressources/HD6305X0.pdf)  a été développé pour collecter le VITC ( le time code vertical ) à partir d'un signal vidéo
+- Un boitier à base de 6305 [lien](ressources/HD6305X0.pdf)  a été développé pour collecter le VITC ( le time code vertical ) à partir d'un signal vidéo 
+
+(note :  je n'arrive pas à relire la disquette en format mac 400K/800K )
+
 - une version du logiciel savait s'interfacer en "RS 422" avec les magnétos professionnels Sony ou équivalent pour récupérer le time code. [lien](https://fr.wikipedia.org/wiki/Betacam)
 
 Quelques belles astuce de programmation, de l'assembleur, un peu de temps réel sous interuption de processeur ultra précis pour synchroniser les sous-titre à l'image prêt. 
@@ -21,6 +24,10 @@ Vintage un peu quand même tout ça...
 https://www.devx.com/terms/nubus/
 Et pour ceux qui ont écrit sous mac... ils étaient beau les livres que l'on avait à disposition... et la couleur est arrivée avec le Macintosh 2. J'ai découvert à l'époque la typographie.
 
+Je souvient d'une carte la NuVista+ mais l'autre par contre... cela reviendra plus tard.
+
 [lien vers les livres ](https://knight.sc/software/2020/04/19/classic-macos-development.html)
 
 Si vous êtes curieux ou simplement bricoleur et capable de lancer tourner un émulateur OS X, il y a un petit risque ce que cela fonctionne...
+
+Amusant si ce code se retrouve dans ChatGPt un jour...
