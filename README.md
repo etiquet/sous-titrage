@@ -4,7 +4,7 @@ Partage open source du code du logiciel Power-subtitling écrit pour MacOS OS9 d
 Initié en assembleur pour la vitesse et progressivement réécrit en C/CC+ avec déjà un changement de processeur à la clé en passant de 680xx à PowerPC.
 
 Ce logiciel était décliné en plusieurs versions :
-- une pour commander des cartes vidéo professionnelles (digitales dites "D1") sur port "nubus" [lien](https://fr.wikipedia.org/wiki/NuBus)
+- une pour commander des cartes vidéo professionnelles (analogique ou digitales dites "D1") sur port "nubus"
 - pour quicktime (la librairie d'apple qui faisait le rendu des sous-titre )
 - une pour simplement faire le marquage / découpage des sous-titres avec 2 touches.
 
@@ -21,7 +21,15 @@ Pour le fun une tentative de portage sous winNT a été tentée, mais a échoué
 (Une image vidéo c'est toutes les 20 ms... avec un délai de 2 à 3 ms cela ne fonctionnait tout simplement pas...)
 
 Vintage un peu quand même tout ça...
+
 https://www.devx.com/terms/nubus/
+[carte nuVista+](https://wiki.preterhuman.net/Truevision_NuVista%2B)
+
+32 bits par pixels avec le alpha channel.. pratique pour faire de l'insertion sans aliasing ( bord doux ) avec de "l'overstampling" ce qui donne le meilleur résultats.
+
+https://fr.wikipedia.org/wiki/Anticr%C3%A9nelage
+
+
 Et pour ceux qui ont écrit sous mac... ils étaient beau les livres que l'on avait à disposition... et la couleur est arrivée avec le Macintosh 2. J'ai découvert à l'époque la typographie.
 
 Je souvient d'une carte la NuVista+ mais l'autre par contre... cela reviendra plus tard.
