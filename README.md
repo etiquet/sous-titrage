@@ -1,41 +1,44 @@
-# Sous-Titrage
+# **Power Subtitling**
 
-Partage open source du code du logiciel Power-subtitling écrit pour MacOS OS9 dans les années 2001 par mes soins.
-Initié en assembleur pour la vitesse et progressivement réécrit en C/CC+ avec déjà un changement de processeur à la clé en passant de 680xx à PowerPC.
+An open-source sharing of the software code for *Power-subtitling*, written for MacOS OS9 between 1992 and 2000 by myself.
 
-Ce logiciel était décliné en plusieurs versions :
-- une pour commander des cartes vidéo professionnelles (analogique ou digitales dites "D1") sur port "nubus"
-- pour quicktime (la librairie d'apple qui faisait le rendu des sous-titre )
-- une pour simplement faire le marquage / découpage des sous-titres avec 2 touches.
+Initially developed in assembly language for speed, it was progressively rewritten in C/C++ with a major processor change along the way, transitioning from 680xx to PowerPC — a typical developer's journey with an innovative manufacturer.
 
-- Un boitier à base de 6305 [lien](ressources/HD6305X0.pdf)  a été développé pour collecter le VITC ( le time code vertical ) à partir d'un signal vidéo 
+This software was available in several versions:  
 
-(note :  je n'arrive pas à relire la disquette en format mac 400K/800K )
+- One to control professional video cards (analog or digital, known as *D1*) via the *NuBus* port.  
+- One for QuickTime (Apple's library responsible for subtitle rendering).  
+- One simply for marking/cutting subtitles with just two keys.  
 
-- une version du logiciel savait s'interfacer en "RS 422" avec les magnétos professionnels Sony ou équivalent pour récupérer le time code. [lien](https://fr.wikipedia.org/wiki/Betacam)
+- A hardware box based on the **6305** [link](ressources/HD6305X0.pdf) was developed to collect *VITC* (Vertical Interval Time Code) from a video signal.  
 
-Quelques belles astuce de programmation, de l'assembleur, un peu de temps réel sous interuption de processeur ultra précis pour synchroniser les sous-titre à l'image prêt. 
+(*Note:* I can no longer read disks in the Mac 400K/800K format.)
 
-Pour le fun une tentative de portage sous winNT a été tentée, mais a échouée car dans le user space NT... le schéduleur préemptif multitache de windows... a un un incrément d'une miliseconde non modifiable à l'époque... c'était quasiment impossible à refaire... je remercie la communauté windows qui m'avait accompagnée.
+- A version of the software could interface via *RS 422* with professional Sony VTRs or equivalent to retrieve the time code. [link](https://en.wikipedia.org/wiki/Betacam)
 
-(Une image vidéo c'est toutes les 20 ms... avec un délai de 2 à 3 ms cela ne fonctionnait tout simplement pas...)
+There were some clever programming tricks, assembly code, a bit of real-time processing under extremely precise processor interrupts to synchronize subtitles frame-perfectly with the image.
 
-Vintage un peu quand même tout ça...
+For fun, I attempted a port to *Windows NT*, but it failed because, in NT user space, Windows' preemptive multitasking scheduler had a fixed, non-modifiable 1-millisecond increment at the time. It was nearly impossible to replicate the same precision. I thank the Windows community that supported me during that attempt.
 
-https://www.devx.com/terms/nubus/
-[carte nuVista+](https://wiki.preterhuman.net/Truevision_NuVista%2B)
+(*A video frame is every 20ms... with a 2-3ms delay, it simply couldn't work.*)
 
-32 bits par pixels avec le alpha channel.. pratique pour faire de l'insertion sans aliasing ( bord doux ) avec de "l'overstampling" ce qui donne le meilleur résultats.
+All of this feels a bit vintage now...
 
-https://fr.wikipedia.org/wiki/Anticr%C3%A9nelage
+[NuBus](https://www.devx.com/terms/nubus/)  
+[NuVista+ Card](https://wiki.preterhuman.net/Truevision_NuVista%2B)
 
+32 bits per pixel with an *alpha channel* — handy for alias-free overlay insertion (*soft edges*) with *oversampling*, resulting in the best possible quality.
 
-Et pour ceux qui ont écrit sous mac... ils étaient beau les livres que l'on avait à disposition... et la couleur est arrivée avec le Macintosh 2. J'ai découvert à l'époque la typographie.
+[Antialiasing](https://en.wikipedia.org/wiki/Antialiasing)
 
-Je souvient d'une carte la NuVista+ mais l'autre par contre... cela reviendra plus tard.
+For those who used to write software for the Mac... the books we had back then were beautiful. And then came color with the *Macintosh II*. It was during this era that I discovered typography.
 
-[lien vers les livres ](https://knight.sc/software/2020/04/19/classic-macos-development.html)
+I remember the NuVista+ card, but the other one… it will come back to me later.
 
-Si vous êtes curieux ou simplement bricoleur et capable de lancer tourner un émulateur OS X, il y a un petit risque ce que cela fonctionne...
+[Link to Classic MacOS Development Books](https://knight.sc/software/2020/04/19/classic-macos-development.html)
 
-Amusant si ce code se retrouve dans ChatGPt un jour...
+If you're curious or just a tinkerer capable of running an OSX emulator, there’s a slim chance this might still work...
+
+For the sake of memory, though completely useless now… if I find usable archives, I’ll post them here. It's quite challenging to read Mac 400K/800K disks nowadays… back then, there were even Jazz1Go or Zip 250KB formats. The archive comes from a Zip disk.
+
+It’s amusing to think this code might someday end up in ChatGPT…
